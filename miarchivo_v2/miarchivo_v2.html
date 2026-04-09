@@ -58,7 +58,7 @@
       }
 
       async function obternerJSON() {
-        const respuesta = await fetch('http://openlibrary.org/subjects/love.json?published_in=1500-1600');
+        const respuesta = await fetch('https://openlibrary.org/subjects/love.json?published_in=1500-1600');
         const datos = await respuesta.json();
         console.log(datos);
         let a=document.createElement("p")
@@ -66,7 +66,7 @@
         document.getElementById("Texti").appendChild(a);
       }
       async function obternerJSON2() {
-        const respuesta = await fetch('http://openlibrary.org/subjects/love.json?published_in=1500-1600');
+        const respuesta = await fetch('https://openlibrary.org/subjects/love.json?published_in=1500-1600');
         const datos = await respuesta.json();
         console.log(datos);
         let a=document.createElement("p")
