@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<head>
+    <title>Actividad 3</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<div class="circulo1"></div>
+<div class="triangulo"></div>
+<div class="cuadrado"></div>
+
+<h1></h1>
+
+<div class="separador"></div>
+
+<h2>1. HTML</h2>
+<h3>Introducción</h3>
+ 
+<div class="pregunta p1">
+    <b>¿Qué es HTML?</b>
+    <h1></h1>
+    <p>
+        HTML significa HyperText Markup Language. Imagínatelo como el esqueleto de una página web.
+        Le dice al navegador qué es cada cosa: esto es un título, esto es un párrafo, esto es una imagen.
+        Sin HTML no hay nada en la pantalla — es la estructura básica de cualquier sitio web que hayas visitado.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN Web Docs - Primeros pasos con HTML</a>
+    </p>
+</div>
+ 
+<div class="separador"><span style="font-size:50px; color:yellow;">⬛⬛⬛</span></div>
+ 
+<div class="pregunta p2">
+    <b>Explica las etiquetas head y body.</b>
+    <p>
+        La etiqueta <code>&lt;head&gt;</code> es como la parte trasera del escenario en un teatro — el público no la ve,
+        pero es importante. Ahí se pone el título de la página, los links al CSS y otras configuraciones.
+        <br><br>
+        La etiqueta <code>&lt;body&gt;</code> es todo lo que el usuario sí ve: textos, imágenes, botones, menús, etc.
+        Si está en la pantalla, está dentro del body.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">MDN Web Docs - ¿Qué hay en el head?</a>
+    </p>
+</div>
+ 
+<div class="separador"><span style="font-size:70px;">🟥🟩🟦</span></div>
+ 
+<h3>Etiquetas básicas</h3>
+ 
+<div class="pregunta p3">
+    <b>Explica las etiquetas: section, article, aside, header, footer.</b>
+    <h1></h1>
+    <p>
+        Estas etiquetas no cambian cómo se ven las cosas por sí solas — solo ayudan a organizar el contenido
+        para que tenga más sentido. Imagínalas como cajas con etiquetas:
+        <br><br>
+        <b>&lt;header&gt;</b> — La parte de arriba de la página, normalmente tiene el logo y el menú de navegación.<br>
+        <b>&lt;footer&gt;</b> — La parte de abajo, normalmente tiene datos de contacto o copyright.<br>
+        <b>&lt;section&gt;</b> — Un bloque genérico de contenido, como un capítulo de un libro.<br>
+        <b>&lt;article&gt;</b> — Contenido que tiene sentido por sí solo, como una noticia o un blog post.<br>
+        <b>&lt;aside&gt;</b> — Contenido relacionado pero no lo principal, como una barra lateral o un dato curioso.<br>
+        <br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">MDN Web Docs - Estructura web y documentación</a>
+    </p>
+</div>
+ 
+<div class="pregunta p4">
+    <b>Crea una lista desordenada. Crea una lista ordenada.</b>
+    <div class="done">✅ DONE</div>
+</div>
+ 
+<div class="separador"><span style="font-size:60px; color:orange; display:inline-block; transform:rotate(20deg);">◆◆◆◆</span></div>
+ 
+<div class="pregunta p5">
+    <b>Crea una tabla básica en HTML.</b>
+    <div class="done">✅ DONE</div>
+</div>
+ 
+<!-- =========== CSS =========== -->
+<div class="separador"><span style="font-size:55px;">🔴🟠🟡🟢🔵🟣</span></div>
+ 
+<h2>2. CSS</h2>
+<h3>Introducción</h3>
+ 
+<div class="pregunta p6">
+    <b>¿Qué es CSS?</b>
+    <p>
+        CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada). Si el HTML es el esqueleto de una página web,
+        el CSS es la ropa y el maquillaje. Controla cómo se ve todo: colores, tamaños, fuentes, espaciado, etc.
+        Sin CSS, todos los sitios web se verían como un documento de Word simple de los años 90.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS">MDN Web Docs - ¿Qué es CSS?</a>
+    </p>
+</div>
+ 
+<div class="pregunta p7">
+    <b>¿Cuál es el propósito del CSS?</b>
+    <p>
+        El propósito del CSS es separar el contenido (HTML) del diseño (cómo se ve).
+        Esto es útil porque puedes cambiar todo el aspecto de un sitio web editando solo un archivo CSS,
+        sin tocar el HTML para nada. También hace que los sitios se vean bien en diferentes tamaños de pantalla
+        como teléfonos, tablets y computadoras.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS">MDN Web Docs - ¿Qué es CSS?</a>
+    </p>
+</div>
+ 
+<div class="separador"><span style="font-size:70px; color:purple; display:inline-block; transform:rotate(-10deg);">⬟⬟⬟</span></div>
+ 
+<div class="pregunta p8">
+    <b>¿Cómo se aplica CSS a un HTML? (las 3 opciones)</b>
+    <p>
+        <b>Opción 1 — Archivo externo:</b> Creas un archivo .css separado y lo enlazas en el &lt;head&gt; así:
+        <br><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code><br>
+        Esta es la forma más común y recomendada.
+        <br><br>
+        <b>Opción 2 — Interno (dentro del HTML):</b> Escribes el CSS directamente dentro de una etiqueta <code>&lt;style&gt;</code> en el &lt;head&gt;.
+        Sirve para páginas pequeñas pero mezcla contenido con diseño.
+        <br><br>
+        <b>Opción 3 — En línea (dentro de cada etiqueta):</b> Escribes el estilo directo en el elemento HTML así:
+        <br><code>&lt;p style="color: red;"&gt;Hola&lt;/p&gt;</code><br>
+        Es la menos recomendada porque se pone muy desordenado rápido.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_is_structured">MDN Web Docs - Cómo se estructura el CSS</a>
+    </p>
+</div>
+ 
+<div class="pregunta p9">
+    <b>¿Qué es un selector? ¿Qué es una regla CSS?</b>
+    <p>
+        Un <b>selector</b> es la forma en que le dices al CSS qué elemento HTML quieres modificar.
+        Por ejemplo, escribir <code>p</code> selecciona todos los párrafos, y escribir <code>.titulo</code>
+        selecciona todo lo que tenga la clase "titulo".
+        <br><br>
+        Una <b>regla CSS</b> es la instrucción completa: el selector más lo que quieres cambiar.
+        Por ejemplo:
+        <br><code>p { color: blue; font-size: 16px; }</code><br>
+        Todo eso junto es una regla. El <code>p</code> es el selector, y todo dentro de las llaves es lo que cambia.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_works">MDN Web Docs - Cómo funciona CSS</a>
+    </p>
+</div>
+ 
+<div class="pregunta p10">
+    <b>Juega los 32 niveles de https://flukeout.github.io/</b>
+    <div class="done">✅ DONE</div>
+</div>
+ 
+<div class="separador"><span style="font-size:65px;">🔷🔶🔷🔶🔷</span></div>
+ 
+<h3>CSS Básico</h3>
+ 
+<div class="pregunta p11">
+    <b>Explica: Tag Selector, Class Selector, Tag and Class Selector, Id Selector</b>
+    <p>
+        <b>Tag Selector:</b> Apunta a todos los elementos de ese tipo. Si escribes <code>h1 { color: red; }</code>
+        todos los h1 de la página se ponen rojos, sin excepción.
+        <br><br>
+        <b>Class Selector:</b> Apunta solo a los elementos que tienen una clase específica.
+        Se escribe con un punto antes del nombre: <code>.resaltado { background: yellow; }</code>.
+        Varios elementos pueden compartir la misma clase.
+        <br><br>
+        <b>Tag and Class Selector:</b> Combina los dos — solo se aplica si el elemento es ese tipo de etiqueta
+        Y además tiene esa clase. Ejemplo: <code>p.resaltado { font-size: 20px; }</code>
+        — esto solo afecta a los párrafos con la clase "resaltado", no a los divs con la misma clase.
+        <br><br>
+        <b>Id Selector:</b> Apunta a un elemento único. Se escribe con un hashtag: <code>#menu { width: 200px; }</code>.
+        Cada id solo debe aparecer una vez en la página — es como un nombre propio, no una etiqueta.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors">MDN Web Docs - Selectores CSS</a>
+    </p>
+    <h1></h1>
+</div>
+ 
+<div class="pregunta p12">
+    <b>¿Qué es una clase? ¿Qué es un id? ¿Cómo se relacionan con CSS?</b>
+    <p>
+        Una <b>clase</b> es una etiqueta que le pones a uno o más elementos HTML para poder estilizarlos juntos.
+        Se agrega así: <code>&lt;p class="importante"&gt;</code>. Muchos elementos pueden tener la misma clase.
+        <br><br>
+        Un <b>id</b> es un nombre único para un elemento específico. Se agrega así:
+        <code>&lt;div id="menu-principal"&gt;</code>. Solo un elemento por página debe tener el mismo id.
+        <br><br>
+        Se relacionan con CSS porque CSS los usa como selectores.
+        Las clases se seleccionan con punto (<code>.importante</code>) y los ids con hashtag (<code>#menu-principal</code>).
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors">MDN Web Docs - Selectores de tipo, clase e ID</a>
+    </p>
+</div>
+ 
+<div class="separador"><span style="font-size:60px; display:inline-block; transform:rotate(30deg); color:red;">▲▲▲</span></div>
+ 
+<div class="pregunta p13">
+    <b>Explica el CSS Box Model. Muestra un ejemplo.</b>
+    <p>
+        Cada elemento HTML es básicamente una caja. El Box Model describe las capas de esa caja de adentro hacia afuera:
+        <br><br>
+        <b>Content (contenido)</b> — el texto o imagen de adentro.<br>
+        <b>Padding</b> — espacio vacío entre el contenido y el borde (adentro de la caja).<br>
+        <b>Border</b> — la línea que rodea el padding y el contenido.<br>
+        <b>Margin</b> — espacio vacío afuera del borde, separa este elemento de los demás.<br>
+        <br>
+        Aquí un ejemplo visual:
+    </p>
+    <div class="caja-boxmodel">
+        Esto es el CONTENIDO. El padding es el espacio entre este texto y el borde rojo.
+        El margin es el espacio afuera del borde rojo.
+    </div>
+    <p>
+        El CSS de esa caja se ve así:<br>
+        <code>width: 250px;</code><br>
+        <code>background-color: lightblue;</code><br>
+        <code>border: 10px solid red;</code><br>
+        <code>padding: 20px;</code><br>
+        <code>margin: 25px;</code>
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model">MDN Web Docs - El modelo de caja</a>
+    </p>
+</div>
+ 
+<h1></h1>
+<div class="pregunta p14">
+    <b>Explica las media queries</b>
+    <p>
+        Las media queries te permiten aplicar CSS diferente dependiendo del tamaño de la pantalla.
+        Imagina que tu sitio se ve bien en computadora pero horrible en el teléfono —
+        las media queries te dejan arreglar eso diciéndole al navegador: "si la pantalla es más pequeña que X píxeles, usa este CSS en su lugar."
+        <br><br>
+        Ejemplo:<br>
+        <code>@media (max-width: 600px) {</code><br>
+        <code>&nbsp;&nbsp;body { background-color: pink; }</code><br>
+        <code>}</code>
+        <br><br>
+        Esto significa: si la pantalla mide 600px o menos (como un teléfono), el fondo se pone rosa.
+        En una pantalla grande sigue normal.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Media_queries">MDN Web Docs - Media queries</a>
+    </p>
+</div>
+ 
+<div class="separador"><span style="font-size:55px;">🟪🟪🟪🟪🟪</span></div>
+ 
+<h3>Layout CSS</h3>
+ 
+<div class="pregunta p15">
+    <b>Explica display: grid</b>
+    <p>
+        Grid es como poner tu contenido en una tabla con filas y columnas.
+        Tú decides cuántas columnas quieres, qué tan anchas son, y el navegador
+        coloca tus elementos en esas casillas automáticamente.
+        <br><br>
+        Ejemplo: si escribes <code>grid-template-columns: 1fr 1fr 1fr</code>
+        obtienes 3 columnas iguales, y tus elementos las van llenando de izquierda a derecha, fila por fila.
+        Es perfecto para layouts de páginas, galerías de fotos, o cualquier vez que necesites cosas
+        alineadas en una cuadrícula.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Grids">MDN Web Docs - CSS Grid Layout</a>
+    </p>
+</div>
+ 
+<div class="pregunta p16">
+    <b>Explica display: flex</b>
+    <p>
+        Flex (abreviación de Flexbox) sirve para acomodar elementos en una sola fila o columna.
+        Imagínalo como poner cosas en un estante — puedes decir "ponlos todos en fila,
+        distribúyelos de manera uniforme, y céntralos verticalmente."
+        <br><br>
+        La diferencia principal con Grid: Flex trabaja en una dirección a la vez (ya sea fila O columna),
+        mientras que Grid trabaja en ambas direcciones al mismo tiempo.
+        Flex es perfecto para barras de navegación, grupos de botones, o para centrar algo en la pantalla.
+        <br><br>
+        Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox">MDN Web Docs - Flexbox</a>
+    </p>
+</div>
+ 
+<div class="pregunta p17">
+    <b>Juega los 24 niveles de https://flexboxfroggy.com/</b>
+    <div class="done">✅ DONE</div>
+</div>
+ <h1></h1>
+<div class="separador">
+    <span style="font-size:70px; display:inline-block; transform:rotate(-15deg);">🔴🔵🟢🟡🟠🟣</span>
+</div>
+</body>
+</html>
