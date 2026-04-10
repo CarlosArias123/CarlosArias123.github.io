@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* --- navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 28px;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.navbar-izquierda a {
+    text-decoration: none;
+    color: #444;
+    font-size: 13px;
+}
+
+.navbar-derecha {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.boton-donate {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.boton-submit {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* --- buscador --- */
+.buscador {
+    text-align: center;
+    padding: 20px;
+}
+
+.buscador input {
+    padding: 7px;
+    width: 350px;
+    border: 1px solid #aaa;
+    font-size: 13px;
+}
+
+.buscador button {
+    padding: 7px 10px;
+    border: 1px solid #aaa;
+    background: white;
+    cursor: pointer;
+}
+
+/* --- categorias --- */
+.categorias {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.categorias a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #444;
+    font-size: 13px;
+}
+
+/* --- contenido --- */
+.contenido {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contenido h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- filas --- */
+.fila {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+/* --- noticias --- */
+.noticia {
+    border: 1px solid #ddd;
+    padding: 8px;
+    flex: 1;
+}
+
+.noticia img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.noticia h3 {
+    font-size: 14px;
+    margin: 6px 0 4px;
+}
+
+.noticia p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.noticia small {
+    display: block;
+    text-align: right;
+    color: #999;
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+/* la noticia grande ocupa mas espacio */
+.grande {
+    flex: 2;
+}
+
+.grande img {
+    height: 200px;
+}
+
+/* --- footer --- */
+.footer {
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
