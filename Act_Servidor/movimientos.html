@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movimientos</title>
+</head>
+<body>
+  <h1>Movimientos financieros</h1>
+  <table id="tabla"></table>
+  <br><a href="/">← Volver</a>
+
+  <script>
+    fetch('/api/movimientos')
+      .then(r => r.json())
+      .then(movs => {
+        const tabla = document.getElementById('tabla');
+        tabla.innerHTML = '<tr><th>#</th><th>Tipo</th><th>Monto</th><th>Fecha</th></tr>' +
+          movs.map(m => `<tr>
+            <td>${m.id}</td>
+            <td class="${m.tipo}">${m.tipo}</td>
+            <td>$${m.monto}</td>
+            <td>${m.fecha}</td>
+          </tr>`).join('');
+      });
+  </script>
+</body>
+</html>

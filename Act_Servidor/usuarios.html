@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Usuarios</title>
+</head>
+<body>
+  <h1>Usuarios</h1>
+  <p>Datos cargados desde <code>/api/usuarios</code>:</p>
+  <table id="tabla"></table>
+  <br><a href="/">← Volver</a>
+
+  <script>
+    fetch('/api/usuarios')
+      .then(r => r.json())
+      .then(usuarios => {
+        const tabla = document.getElementById('tabla');
+        tabla.innerHTML = '<tr><th>Nombre</th><th>Saldo</th></tr>' +
+          usuarios.map(u => `<tr><td>${u.nombre}</td><td>$${u.saldo}</td></tr>`).join('');
+      });
+  </script>
+</body>
+</html>
